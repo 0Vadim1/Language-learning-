@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вивчення слів</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Вивчення слів</h1>
+        <div id="word-card">
+            <h2 id="word"></h2>
+            <input type="text" id="translation" placeholder="Введіть переклад">
+            <button id="check-btn">Перевірити</button>
+        </div>
+        <div id="progress">
+            <div id="progress-bar"></div>
+        </div>
+        <div id="score">
+            <p>Правильних відповідей: <span id="correct-count">0</span></p>
+            <p>Невірних відповідей: <span id="incorrect-count">0</span></p>
+        </div>
+        <button id="open-list-btn">Переглянути слова</button>
+        <button id="restart-btn">Почати заново</button>
+    </div>
+
+    <!-- Модальне вікно для списку слів -->
+    <div id="word-list-modal" class="modal">
+        <div class="modal-content">
+            <h2>Список слів</h2>
+            <ul id="word-list"></ul>
+            <button>Закрити</button>
+        </div>
+    </div>
+
+    <!-- Модальне вікно для результатів -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <h2>Результати</h2>
+        <p id="result-message"></p>
+        <p id="level-message"></p> <!-- Повідомлення про рівень -->
+        <button id="restart-btn1">Почати заново</button>
+    </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #76c7c0, #56a69a, #333, #111);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    margin: 0;
+    color: white;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#game-container {
+    text-align: center;
+    background-color: rgba(34, 34, 34, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    width: 300px;
+    transition: all 0.3s ease;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #76c7c0;
+}
+
+#word-card {
+    margin-bottom: 20px;
+}
+
+#word {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #76c7c0;
+}
+
+#translation {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #76c7c0;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+}
+
+#check-btn, #open-list-btn, #restart-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #76c7c0;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+#check-btn:hover, #open-list-btn:hover, #restart-btn:hover {
+    background-color: #56a69a;
+}
+
+#progress {
+    margin-top: 20px;
+    background-color: #444;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #76c7c0;
+    transition: width 0.3s ease;
+}
+
+#score p {
+    font-size: 18px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 80%;
+    height: auto;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+    background-color: #76c7c0;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #56a69a;
+}
